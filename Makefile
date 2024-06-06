@@ -3,6 +3,7 @@
 run:
 	@docker \
 		run \
+		--rm \
 		--name mysql \
 		-e MYSQL_ROOT_PASSWORD=root \
 		-v ./data:/var/lib/mysql \
